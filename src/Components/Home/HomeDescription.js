@@ -1,45 +1,71 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Feature } from './Feature';
-import { Icons } from '../../Utils/ImgArr';
+import { FeatureIcons } from '../../Utils/FeatureIcons';
+import { primary } from '../../Utils/ColorPalette';
+import { LinkBtn } from '../LinkBtn';
 
 export const HomeDescription = () => {
 	return (
 		<>
 			<Container>
-				<div style={{ textAlign: 'center', marginTop: '10rem' }}>
-					<h3>EVER EXPANDING CONTENT SPARKS</h3>
-					<h1>NEW ADVENTURES</h1>
-					<button
+				<div
+					style={{
+						display: 'flex',
+						alignContent: 'center',
+						flexDirection: 'column',
+						alignItems: 'center',
+						textAlign: 'center',
+						marginTop: '10rem',
+						justifyContent: 'center',
+						margin: '20% 20% 10% 20%',
+					}}
+				>
+					<div style={{ marginBottom: '1rem' }}>
+						<h3>EVER EXPANDING CONTENT SPARKS</h3>
+						<br />
+						<h2>NEW ADVENTURES</h2>
+					</div>
+
+					<div
 						style={{
 							border: 'none',
-							background: 'red',
-							padding: '0 1rem',
+							background: `${primary}`,
 							color: 'white',
 							borderRadius: '4rem',
+							width: '300px',
+							height: '2rem',
+							display: 'flex',
+							justifyContent: 'center',
+							alignItems: 'center',
+							marginBottom: '2rem',
 						}}
 					>
-						FUN & ENGAGING CONTENT
-					</button>
-					<p>
+						<h3>FUN & ENGAGING CONTENT</h3>
+					</div>
+					<h4>
 						Meet the Skoog. Describe in a few words the what and the who. What is the
 						Skoog? For who it is?
-					</p>
+					</h4>
 				</div>
 			</Container>
 			<Container>
-				<Row style={{ textAlign: 'center' }}>
-					{Icons.map((image, index) => {
+				<Row style={{ textAlign: 'center', margin: '0 10%' }}>
+					{FeatureIcons.map((feature, index) => {
 						return (
 							<Col sm={12} lg={4}>
-								<Feature img={image.src} key={index} alt={image.alt} />
+								<Feature
+									img={feature.src}
+									alt={feature.alt}
+									title={feature.title}
+									description={feature.shortDescription}
+									key={index}
+								/>
 							</Col>
 						);
 					})}
 				</Row>
-				<div style={{ textAlign: 'center', margin: '3rem 0' }}>
-					<h5>BROWSE ALL FEATURES</h5>
-				</div>
+				<LinkBtn href={'/skoog-media'} text={'Browse All Features'} />
 			</Container>
 		</>
 	);

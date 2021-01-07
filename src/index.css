@@ -13,11 +13,78 @@ h2,
 h3,
 h4,
 h5,
-h5 {
-	margin: 0;
-	padding: 0;
+h6 {
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1rem !important;
+	font-weight: 400 !important;
 }
+
+button {
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 2rem !important;
+	font-weight: 700 !important;
+}
+
+h1 {
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 7rem !important;
+	line-height: 0.8em !important;
+	font-weight: 700 !important;
+}
+
+h2 {
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 3rem !important;
+	line-height: 1em !important;
+	font-weight: 700 !important;
+	text-transform: capitalize;
+}
+
+h3 {
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 1rem !important;
+	line-height: 1em !important;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.3rem !important;
+	font-weight: 400 !important;
+	line-height: 1.6em !important;
+}
+
+h5 {
+	font-family: 'Baloo Paaji 2', cursive;
+	font-size: 1.6rem !important;
+	line-height: 0.8em !important;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem !important;
+}
+
+/*Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 3rem !important;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+	h1 {
+		font-size: 3rem !important;
+	}
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* 
+@media only screen and (min-width: 768px) {
+	...;
+} */

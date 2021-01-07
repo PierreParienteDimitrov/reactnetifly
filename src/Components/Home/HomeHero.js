@@ -4,6 +4,8 @@ import product from '../../images/product.png';
 import age from '../../images/age.png';
 import sesameStreetLogo from '../../images/sesame-street-logo.png';
 import { Container, Row, Col } from 'react-bootstrap';
+import { HeroTitle } from '../HeroTitle';
+import { Button } from '../Button';
 
 export const HomeHero = () => {
 	// const isDesktopOrLaptop = window.matchMedia('(min-width: 1200px)');
@@ -42,9 +44,8 @@ export const HomeHero = () => {
 						style={isDesktopOrLaptop.matches ? styles.heroDesktop : styles.heroMobile}
 					> */}
 					<div style={{ marginTop: '15%' }}>
-						<h5>ENRICHING LIVES THROUGH</h5>
-						<h1>CREATIVE PLAY</h1>
-						<button>PRE-ORDER NOW!</button>
+						<HeroTitle header={'ENRICHING LIVES THROUGH'} title={'CREATIVE PLAY'} />
+						<Button cta='Pre-order now!' />
 						<div style={styles.logos}>
 							<img
 								src={age}
