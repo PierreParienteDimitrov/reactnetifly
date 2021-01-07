@@ -6,6 +6,7 @@ import sesameStreetLogo from '../../images/sesame-street-logo.png';
 import { Container, Row, Col } from 'react-bootstrap';
 import { HeroTitle } from '../HeroTitle';
 import { Button } from '../Button';
+import { yellow } from '../../Utils/ColorPalette';
 
 export const HomeHero = () => {
 	// const isDesktopOrLaptop = window.matchMedia('(min-width: 1200px)');
@@ -44,7 +45,11 @@ export const HomeHero = () => {
 						style={isDesktopOrLaptop.matches ? styles.heroDesktop : styles.heroMobile}
 					> */}
 					<div style={{ marginTop: '15%' }}>
-						<HeroTitle header={'ENRICHING LIVES THROUGH'} title={'CREATIVE PLAY'} />
+						<HeroTitle
+							header={'ENRICHING LIVES THROUGH'}
+							title={'CREATIVE PLAY'}
+							colorTxt={`${yellow}`}
+						/>
 						<Button cta='Pre-order now!' />
 						<div style={styles.logos}>
 							<img

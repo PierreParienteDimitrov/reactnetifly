@@ -1,9 +1,12 @@
 import React from 'react';
+import { HeroWonderDots } from '../Components/WonderDots/HeroWonderDots';
+import { StoryTime } from '../Components/WonderDots/StoryTime';
 
 export const WonderDots = () => {
 	return (
 		<div>
-			<p>I am a Wonder Dots</p>
+			<HeroWonderDots />
+			<StoryTime />
 		</div>
 	);
 };

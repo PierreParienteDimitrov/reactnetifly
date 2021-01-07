@@ -4,6 +4,7 @@ import herobg from '../../images/herobg.png';
 import { HeroTitle } from '../HeroTitle';
 import vignette from '../../images/vignette.png';
 import productNotice from '../../images/productNotice.png';
+import { yellow } from '../../Utils/ColorPalette';
 
 export const HeroSkoogPlay = () => {
 	const styles = {
@@ -25,7 +26,11 @@ export const HeroSkoogPlay = () => {
 				<Row>
 					<Col sm={12} lg={6}>
 						<div style={{ marginTop: '15%' }}>
-							<HeroTitle header={'A CUBE FULL OF'} title={'CURIOSITY'} />
+							<HeroTitle
+								header={'A CUBE FULL OF'}
+								title={'CURIOSITY'}
+								colorTxt={`${yellow}`}
+							/>
 							<img
 								src={vignette}
 								alt='vignette'
