@@ -37,7 +37,7 @@ export const HomeDescription = () => {
 						);
 					})}
 				</Row>
-				<div style={{ textAlign: 'center', marginTop: '3rem' }}>
+				<div style={{ textAlign: 'center', margin: '3rem 0' }}>
 					<h5>BROWSE ALL FEATURES</h5>
 				</div>
 			</Container>
