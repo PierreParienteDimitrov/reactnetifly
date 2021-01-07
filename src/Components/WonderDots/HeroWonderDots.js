@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import WonderDotsHero from '../../images/WonderDotsHero.png';
 import SesameStreet from '../../images/sesame-street-logo.png';
 import SkoogBlue from '../../images/SkoogBlue.png';

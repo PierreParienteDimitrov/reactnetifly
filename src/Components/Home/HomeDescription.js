@@ -53,13 +53,12 @@ export const HomeDescription = () => {
 				<Row style={{ textAlign: 'center', margin: '0 10%' }}>
 					{FeatureIcons.map((feature, index) => {
 						return (
-							<Col sm={12} lg={4}>
+							<Col sm={12} lg={4} key={index}>
 								<Feature
 									img={feature.src}
 									alt={feature.alt}
 									title={feature.title}
 									description={feature.shortDescription}
-									key={index}
 								/>
 							</Col>
 						);

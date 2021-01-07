@@ -33,9 +33,9 @@ export const HomeHowTo = () => {
 					<br />
 					{HowSkoogWorks.map((el, index) => {
 						return (
-							<>
-								<Table number={el.number} how={el.how} key={index} />
-							</>
+							<div key={index}>
+								<Table number={el.number} how={el.how} />
+							</div>
 						);
 					})}
 				</Col>
