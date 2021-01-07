@@ -6,7 +6,7 @@ import sesameStreetLogo from '../../images/sesame-street-logo.png';
 import { Container, Row, Col } from 'react-bootstrap';
 
 export const HomeHero = () => {
-	const isDesktopOrLaptop = window.matchMedia('(min-width: 1200px)');
+	// const isDesktopOrLaptop = window.matchMedia('(min-width: 1200px)');
 
 	const styles = {
 		imgBg: {
