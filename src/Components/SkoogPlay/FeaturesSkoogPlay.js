@@ -24,9 +24,9 @@ export const FeaturesSkoogPlay = () => {
 							  }
 					}
 				>
-					<div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
-						<img src={SkoogOrange} alt='Orange Skoog' width='30%' />
-					</div>
+					<Container style={isXs.matches ? { width: '90%' } : { width: '60%' }}>
+						<img src={SkoogOrange} alt='Orange Skoog' width='100%' />
+					</Container>
 					<div style={{ padding: '2rem 0rem 0rem 0rem' }}>
 						<RegularTitle
 							title={`Engage your child's wonder`}
