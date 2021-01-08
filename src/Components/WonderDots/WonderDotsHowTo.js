@@ -20,57 +20,49 @@ export const WonderDotsHowTo = () => {
 	};
 	return (
 		<Container fluid style={styles.howToBg}>
-			<Container
-			// style={
-			// 	isXs.matches
-			// 		? { width: '94%', padding: '8rem 0', textAlign: 'center' }
-			// 		: { width: '70%', padding: '12rem 0', textAlign: 'left' }
-			// }
-			>
-				<Row style={{ alignItems: 'center' }}>
-					<Col sm={12} lg={5}>
-						<Container
-							style={
-								isXs.matches
-									? {
-											width: '100%',
-											marginBottom: '4rem',
-									  }
-									: {
-											width: '30%',
-											marginBottom: '4rem',
-									  }
-							}
-						>
-							<img src={JumpingSkoog} alt='' width='100%' />
-						</Container>
-					</Col>
-					<Col sm={12} lg={7}>
-						<h5>HOW WONDER DOTS WORKS</h5>
-						<br />
-						<br />
-						{HowWonderWorks.map((el, index) => {
-							return (
-								<div key={index}>
-									<Table number={el.number} how={el.how} />
-								</div>
-							);
-						})}
-						<br />
-						<br />
-						<h6>Companion App Compatible with</h6>
-						<img
-							src={AppStores}
-							alt='Google Play and App Store'
-							style={
-								isXs.matches
-									? { width: '80%', marginTop: '2rem' }
-									: { width: '50%', marginTop: '2rem' }
-							}
-						/>
-					</Col>
-				</Row>
-			</Container>
+			<Row style={{ alignItems: 'center' }}>
+				<Col sm={12} lg={5}>
+					<Container
+						style={
+							isXs.matches
+								? {
+										width: '100%',
+										marginBottom: '4rem',
+								  }
+								: {
+										width: '30%',
+										marginBottom: '4rem',
+								  }
+						}
+					>
+						<img src={JumpingSkoog} alt='' width='100%' />
+					</Container>
+				</Col>
+				<Col sm={12} lg={7}>
+					<h5>HOW WONDER DOTS WORKS</h5>
+					<br />
+					<br />
+					{HowWonderWorks.map((el, index) => {
+						return (
+							<div key={index}>
+								<Table number={el.number} how={el.how} />
+							</div>
+						);
+					})}
+					<br />
+					<br />
+					<h6>Companion App Compatible with</h6>
+					<img
+						src={AppStores}
+						alt='Google Play and App Store'
+						style={
+							isXs.matches
+								? { width: '80%', marginTop: '2rem' }
+								: { width: '50%', marginTop: '2rem' }
+						}
+					/>
+				</Col>
+			</Row>
 		</Container>
 	);
 };
