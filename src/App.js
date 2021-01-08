@@ -16,13 +16,13 @@ function App() {
 					<Route exact path='/'>
 						<Home />
 					</Route>
-					<Route exact path='/skoog-play'>
+					<Route path='/skoog-play'>
 						<SkoogPlay />
 					</Route>
-					<Route exact path='/wonder-dots'>
+					<Route path='/wonder-dots'>
 						<WonderDots />
 					</Route>
-					<Route exact path='/story'>
+					<Route path='/story'>
 						<Story />
 					</Route>
 				</Switch>
