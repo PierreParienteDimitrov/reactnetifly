@@ -30,20 +30,25 @@ export const StoryPack = () => {
 				<RegularTitle title={'YOUR PRE-ORDERED SKOOG PACKED WITH THREE STORIES'} />
 				<Row>
 					<Col sm={12} lg={4}>
-						<div
-							style={{
-								width: '100%',
-								display: 'flex',
-								justifyContent: 'center',
-								marginBottom: '4rem',
-							}}
+						<Container
+							style={
+								isXs.matches
+									? {
+											width: '100%',
+											display: 'flex',
+											justifyContent: 'center',
+											marginBottom: '4rem',
+									  }
+									: {
+											width: '90%',
+											display: 'flex',
+											justifyContent: 'center',
+											marginBottom: '4rem',
+									  }
+							}
 						>
-							<img
-								src={GoneFarming}
-								alt=''
-								style={isXs.matches ? { width: '60%' } : { width: '80%' }}
-							/>
-						</div>
+							<img src={GoneFarming} alt='' width='100%' />
+						</Container>
 					</Col>
 					<Col sm={12} lg={4}>
 						<div
