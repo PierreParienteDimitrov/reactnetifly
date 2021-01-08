@@ -23,13 +23,16 @@ export const Navigation = () => {
 							Skoog Play
 						</h6>
 					</Link>
-
-					<Nav.Link href='/wonder-dots'>
-						<h6 style={{ color: 'white', cursor: 'pointer' }}>Wonder Dots</h6>
-					</Nav.Link>
-					<Nav.Link href='/story'>
-						<h6 style={{ color: 'white', cursor: 'pointer' }}>Our Story</h6>
-					</Nav.Link>
+					<Link to='/wonder-dots'>
+						<h6 style={{ color: 'white', cursor: 'pointer', paddingLeft: '10rem' }}>
+							Wonder Dots
+						</h6>
+					</Link>
+					<Link to='/story'>
+						<h6 style={{ color: 'white', cursor: 'pointer', paddingLeft: '10rem' }}>
+							Story
+						</h6>
+					</Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
