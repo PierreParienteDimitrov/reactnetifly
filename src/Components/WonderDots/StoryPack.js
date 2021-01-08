@@ -40,7 +40,7 @@ export const StoryPack = () => {
 											marginBottom: '4rem',
 									  }
 									: {
-											width: '90%',
+											width: '50%',
 											display: 'flex',
 											justifyContent: 'center',
 											marginBottom: '4rem',
@@ -51,36 +51,54 @@ export const StoryPack = () => {
 						</Container>
 					</Col>
 					<Col sm={12} lg={4}>
-						<div
-							style={{
-								width: '100%',
-								display: 'flex',
-								justifyContent: 'center',
-								marginBottom: '4rem',
-							}}
+						<Container
+							style={
+								isXs.matches
+									? {
+											width: '100%',
+											display: 'flex',
+											justifyContent: 'center',
+											marginBottom: '4rem',
+									  }
+									: {
+											width: '50%',
+											display: 'flex',
+											justifyContent: 'center',
+											marginBottom: '4rem',
+									  }
+							}
 						>
 							<img
 								src={PlayBall}
 								alt=''
 								style={isXs.matches ? { width: '60%' } : { width: '80%' }}
 							/>
-						</div>
+						</Container>
 					</Col>
 					<Col sm={12} lg={4}>
-						<div
-							style={{
-								width: '100%',
-								display: 'flex',
-								justifyContent: 'center',
-								marginBottom: '4rem',
-							}}
+						<Container
+							style={
+								isXs.matches
+									? {
+											width: '100%',
+											display: 'flex',
+											justifyContent: 'center',
+											marginBottom: '4rem',
+									  }
+									: {
+											width: '50%',
+											display: 'flex',
+											justifyContent: 'center',
+											marginBottom: '4rem',
+									  }
+							}
 						>
 							<img
 								src={Mystery}
 								alt=''
 								style={isXs.matches ? { width: '60%' } : { width: '80%' }}
 							/>
-						</div>
+						</Container>
 					</Col>
 				</Row>
 			</Container>
