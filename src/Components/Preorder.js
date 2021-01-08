@@ -18,7 +18,7 @@ export const Preorder = () => {
 							<h6 style={{ color: `${red}` }}>NEW!</h6>
 							<RegularTitle
 								title={'pre-order'}
-								description={'Preorder your starter kit now! Starting from $99.'}
+								description={`Don't miss your chance to pre-order your Skoog! Sign up now for important updates!`}
 							/>
 							<img
 								src={Packaging}
@@ -48,7 +48,7 @@ export const Preorder = () => {
 					</Col>
 				</Row>
 				<Row style={{ justifyContent: 'center', marginTop: '4rem' }}>
-					<Button cta='Pre-order now!' />
+					<Button cta='Sign up now!' />
 				</Row>
 			</div>
 		</Container>
