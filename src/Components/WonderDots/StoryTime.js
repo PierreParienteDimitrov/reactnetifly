@@ -3,13 +3,20 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { RegularTitle } from '../RegularTitle';
 import { StoryTimeContent } from '../../Utils/Content/StoryTimeContent';
 import ElmoFriend from '../../images/ElmoFriend.png';
+import { isXs } from '../../Utils/MediaQueries';
 
 export const StoryTime = () => {
 	return (
 		<Container>
 			<Row style={{ alignItems: 'center' }}>
 				<Col sm={12} lg={6}>
-					<Container style={{ margin: '4rem 0' }}>
+					<Container
+						style={
+							isXs.matches
+								? { width: '60%', padding: '4rem 0' }
+								: { width: '80%', padding: '4rem 0' }
+						}
+					>
 						<img src={ElmoFriend} alt='Elmo Friend' width='100%' />
 					</Container>
 				</Col>
