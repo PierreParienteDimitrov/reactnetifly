@@ -11,22 +11,15 @@ export const HomeHowTo = () => {
 		<Container
 			style={
 				isXs.matches
-					? { width: '94%', padding: '8rem 0', textAlign: 'center' }
+					? { width: '94%', padding: '4rem 0', textAlign: 'center' }
 					: { width: '70%', padding: '12rem 0', textAlign: 'left' }
 			}
 		>
 			<Row style={{ alignItems: 'center' }}>
 				<Col sm={12} lg={5}>
-					<div
-						style={{
-							width: '100%',
-							display: 'flex',
-							justifyContent: 'center',
-							marginBottom: '4rem',
-						}}
-					>
-						<img src={SkoogWorks} alt='' width='80%' />
-					</div>
+					<Container style={{ width: '60%', marginBottom: '2rem' }}>
+						<img src={SkoogWorks} alt='' width='100%' />
+					</Container>
 				</Col>
 				<Col sm={12} lg={7}>
 					<h5>HOW SKOOG WORKS</h5>

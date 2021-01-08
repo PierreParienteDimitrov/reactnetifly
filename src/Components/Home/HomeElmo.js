@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
 import SesameBg from '../../images/sesame-bg.png';
-import WonderDots1 from '../../images/wonder-dots-1.png';
-import WonderDots2 from '../../images/wonder-dots-2.png';
-import WonderDots3 from '../../images/wonder-dots-3.png';
+import { RegularTitle } from '../RegularTitle';
+import { isXs } from '../../Utils/MediaQueries';
+import { LinkBtn } from '../LinkBtn';
+import { yellow } from '../../Utils/ColorPalette';
 
 export const HomeElmo = () => {
 	const styles = {
-		sesameBg: {
+		imgBgDesktop: {
 			display: 'flex',
 			flexDirection: 'row',
 			backgroundImage: `url(${SesameBg})`,
@@ -18,25 +19,25 @@ export const HomeElmo = () => {
 			backgroundSize: 'cover',
 			padding: '0',
 		},
+		mobileBg: {
+			backgroundColor: `${yellow}`,
+			height: '80vh',
+		},
 	};
 	return (
-		<div style={styles.sesameBg}>
-			<div style={{ display: 'flex', flexDirection: 'column' }}>
-				<h3>Elmo and Friends</h3>
-				<p>
-					Squeezable & interchangeable Wonder Dots packed with interactive stories,
-					character, voices, songs & more! All of it developed for your kids with
-					Sesame Street!
-				</p>
-				<div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-					<img src={WonderDots1} alt='' width='33%' />
-					<img src={WonderDots2} alt='' width='33%' />
-					<img src={WonderDots3} alt='' width='33%' />
-				</div>
-				<h6>
-					<Link to='/wonder-dots'>BROWSE WONDER DOTS</Link>
-				</h6>
-			</div>
-		</div>
+		<Container fluid style={styles.imgBgDesktop} className='align-items-center'>
+			<Container>
+				<Row>
+					<Col sm={12} lg={6} style={{ alignItems: 'center' }}>
+						<RegularTitle
+							title={'Elmo & Friends'}
+							description={`Squeezable & interchangeable Wonder Dots packed with interactive stories, character, voices, songs & more!`}
+						/>
+						<LinkBtn href={'/wonder-dots'} text={'BROWSE WONDER DOTS'} />
+					</Col>
+					<Col sm={12} lg={6}></Col>
+				</Row>
+			</Container>
+		</Container>
 	);
 };
