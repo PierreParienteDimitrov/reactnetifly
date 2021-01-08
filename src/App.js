@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Navbar } from './Components/Navbar';
+import { Navigation } from './Components/Navigation';
 import { Home } from './Pages/Home';
 import { SkoogPlay } from './Pages/SkoogPlay';
 import { WonderDots } from './Pages/WonderDots';
@@ -11,7 +11,7 @@ function App() {
 	return (
 		<>
 			<Router>
-				<Navbar />
+				<Navigation />
 				<Switch>
 					<Route exact path='/'>
 						<Home />

@@ -78,8 +78,22 @@ h6 {
 
 /*Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	button {
+		font-size: 1.8rem !important;
+	}
+
 	h1 {
 		font-size: 3rem !important;
+		line-height: 3rem !important;
+	}
+
+	h4 {
+		font-size: 1.2rem !important;
+		line-height: 1.4em !important;
+	}
+
+	h5 {
+		font-size: 1.4rem !important;
 	}
 }
 
