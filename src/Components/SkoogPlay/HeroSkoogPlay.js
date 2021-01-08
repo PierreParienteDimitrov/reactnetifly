@@ -1,5 +1,5 @@
 import React from 'react';
-import herobg from '../../images/herobg.png';
+import herobgblue from '../../images/HomeHeroBlue.png';
 import Vignette from '../../images/vignette.png';
 import VignetteMobile from '../../images/VignetteMobile.png';
 import ProductNotice from '../../images/productNotice.png';
@@ -11,7 +11,7 @@ import { isXs } from '../../Utils/MediaQueries';
 export const HeroSkoogPlay = () => {
 	const styles = {
 		imgBgDesktop: {
-			backgroundImage: `url(${herobg})`,
+			backgroundImage: `url(${herobgblue})`,
 			backgroundColor: '#cccccc',
 			height: '100vh',
 			backgroundPosition: 'center',

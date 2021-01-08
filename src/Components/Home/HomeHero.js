@@ -1,5 +1,5 @@
 import React from 'react';
-import herobg from '../../images/herobg.png';
+import herobgblue from '../../images/HomeHeroBlue.png';
 import product from '../../images/product.png';
 import age from '../../images/age.png';
 import sesameStreetLogo from '../../images/sesame-street-logo.png';
@@ -14,7 +14,7 @@ export const HomeHero = () => {
 
 	const styles = {
 		imgBgDesktop: {
-			backgroundImage: `url(${herobg})`,
+			backgroundImage: `url(${herobgblue})`,
 			backgroundColor: '#cccccc',
 			height: '100vh',
 			backgroundPosition: 'center',

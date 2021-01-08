@@ -1,14 +1,14 @@
 import React from 'react';
-import { blue, lightBlue } from '../Utils/ColorPalette';
+import { blue, primary } from '../Utils/ColorPalette';
 
 export const Button = ({ cta }) => {
 	const styles = {
 		btn: {
 			border: 'none',
-			background: `${blue}`,
+			background: `${primary}`,
 			padding: '0.2rem 1.2rem',
 			borderRadius: '10px',
-			boxShadow: `0px 5px ${lightBlue}`,
+			boxShadow: `0px 5px ${blue}`,
 			color: `${blue}`,
 			cursor: 'pointer',
 		},

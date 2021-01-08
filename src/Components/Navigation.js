@@ -1,9 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { blue } from '../Utils/ColorPalette';
 import SkoogLogoWhite from '../images/SkoogLogoWhite.png';
 import { Link } from 'react-router-dom';
-import { yellow } from '../Utils/ColorPalette';
+import { yellow, primary } from '../Utils/ColorPalette';
 import { isXs } from '../Utils/MediaQueries';
 
 export const Navigation = () => {
@@ -12,7 +11,7 @@ export const Navigation = () => {
 			collapseOnSelect
 			expand='lg'
 			variant='dark'
-			style={{ background: `${blue}` }}
+			style={{ background: `${primary}` }}
 		>
 			<Navbar.Brand href='/'>
 				<img src={SkoogLogoWhite} alt='Skoog Logo White' />
