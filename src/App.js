@@ -6,6 +6,7 @@ import { Home } from './Pages/Home';
 import { SkoogPlay } from './Pages/SkoogPlay';
 import { WonderDots } from './Pages/WonderDots';
 import { OurStory } from './Pages/OurStory';
+import { Footer } from './Components/Footer';
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 						<OurStory />
 					</Route>
 				</Switch>
+				<Footer />
 			</Router>
 		</>
 	);
