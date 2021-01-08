@@ -11,7 +11,11 @@ export const Story = () => {
 		<Container fluid style={{ background: `${yellow}` }}>
 			<Container style={{ padding: '4rem 0' }}>
 				<Row style={{ alignItems: 'center' }}>
-					<Col sm={(12, { order: 1 })} lg={6} style={{ marginBottom: '4rem' }}>
+					<Col sm={12} lg={6}>
+						<img src={TeamPicture} alt='' width='100%' />
+					</Col>
+					<br />
+					<Col sm={12} lg={6} style={{ marginBottom: '4rem' }}>
 						<img
 							src={Icon1}
 							alt='Icon One'
@@ -21,11 +25,8 @@ export const Story = () => {
 							title={'Our Story'}
 							description={`We’re on a mission to ignite creativity and imaginative play in children. Skoog gives children a screen-free digital way to explore and experience learning.`}
 						/>
-						<br />
+
 						<LinkBtn align={'left'} href={'/story'} text={'Read our story'} />
-					</Col>
-					<Col sm={(12, { order: 2 })} lg={6}>
-						<img src={TeamPicture} alt='' width='100%' />
 					</Col>
 				</Row>
 			</Container>
