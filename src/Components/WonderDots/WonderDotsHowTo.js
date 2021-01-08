@@ -34,14 +34,10 @@ export const WonderDotsHowTo = () => {
 								isXs.matches
 									? {
 											width: '100%',
-											display: 'flex',
-											justifyContent: 'center',
 											marginBottom: '4rem',
 									  }
 									: {
-											width: '50%',
-											display: 'flex',
-											justifyContent: 'center',
+											width: '30%',
 											marginBottom: '4rem',
 									  }
 							}

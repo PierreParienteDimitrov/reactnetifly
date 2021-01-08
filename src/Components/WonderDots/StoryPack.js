@@ -47,7 +47,7 @@ export const StoryPack = () => {
 									  }
 							}
 						>
-							<img src={GoneFarming} alt='' width='100%' />
+							<img src={GoneFarming} alt='Gone Farming' width='100%' />
 						</Container>
 					</Col>
 					<Col sm={12} lg={4}>
@@ -68,11 +68,7 @@ export const StoryPack = () => {
 									  }
 							}
 						>
-							<img
-								src={PlayBall}
-								alt=''
-								style={isXs.matches ? { width: '60%' } : { width: '80%' }}
-							/>
+							<img src={PlayBall} alt='PlayBall' width='100%' />
 						</Container>
 					</Col>
 					<Col sm={12} lg={4}>
@@ -93,11 +89,7 @@ export const StoryPack = () => {
 									  }
 							}
 						>
-							<img
-								src={Mystery}
-								alt=''
-								style={isXs.matches ? { width: '60%' } : { width: '80%' }}
-							/>
+							<img src={Mystery} alt='Mystery' width='100%' />
 						</Container>
 					</Col>
 				</Row>
