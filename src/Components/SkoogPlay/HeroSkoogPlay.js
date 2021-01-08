@@ -63,7 +63,7 @@ export const HeroSkoogPlay = () => {
 								<img
 									src={isXs.matches ? VignetteMobile : Vignette}
 									alt=''
-									style={isXs.matches ? { width: '100%' } : { width: '100%' }}
+									style={isXs.matches ? { width: '90%' } : { width: '100%' }}
 								/>
 							</div>
 						</div>
@@ -73,7 +73,7 @@ export const HeroSkoogPlay = () => {
 							<img
 								src={ProductNotice}
 								alt=''
-								style={isXs.matches ? { width: '120%' } : { width: '120%' }}
+								style={isXs.matches ? { width: '90%' } : { width: '100%' }}
 							/>
 						</div>
 					</Col>
