@@ -21,11 +21,11 @@ export const WonderDotsHowTo = () => {
 	return (
 		<Container fluid style={styles.howToBg}>
 			<Container
-				style={
-					isXs.matches
-						? { width: '94%', padding: '8rem 0', textAlign: 'center' }
-						: { width: '70%', padding: '12rem 0', textAlign: 'left' }
-				}
+			// style={
+			// 	isXs.matches
+			// 		? { width: '94%', padding: '8rem 0', textAlign: 'center' }
+			// 		: { width: '70%', padding: '12rem 0', textAlign: 'left' }
+			// }
 			>
 				<Row style={{ alignItems: 'center' }}>
 					<Col sm={12} lg={5}>
