@@ -6,6 +6,7 @@ import { blue } from '../../Utils/ColorPalette';
 import { FeatureIcons } from '../../Utils/FeatureIcons';
 import { FeatureLeft } from './FeatureLeft';
 import { FeatureRight } from './FeatureRight';
+import { isXs } from '../../Utils/MediaQueries';
 
 export const FeaturesSkoogPlay = () => {
 	const styles = {
@@ -42,7 +43,7 @@ export const FeaturesSkoogPlay = () => {
 				</Container>
 			</Container>
 			<Container fluid style={{ background: `${blue}` }}>
-				<Container style={{ width: '60%' }}>
+				<Container style={isXs.matches ? { width: '90%' } : { width: '60%' }}>
 					{FeatureIcons.map((el, index) => {
 						return (
 							<>

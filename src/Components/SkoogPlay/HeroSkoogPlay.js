@@ -1,50 +1,84 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import herobg from '../../images/herobg.png';
+import Vignette from '../../images/vignette.png';
+import VignetteMobile from '../../images/VignetteMobile.png';
+
+import ProductNotice from '../../images/productNotice.png';
+import Skoog from '../../images/Skoog.png';
+
+import { Container, Row, Col } from 'react-bootstrap';
 import { HeroTitle } from '../HeroTitle';
-import vignette from '../../images/vignette.png';
-import productNotice from '../../images/productNotice.png';
-import { yellow } from '../../Utils/ColorPalette';
+import { yellow, primary } from '../../Utils/ColorPalette';
+import { isXs } from '../../Utils/MediaQueries';
 
 export const HeroSkoogPlay = () => {
 	const styles = {
-		imgBg: {
+		imgBgDesktop: {
 			backgroundImage: `url(${herobg})`,
 			backgroundColor: '#cccccc',
-			height: '80vh',
-			width: '100%',
+			height: '100vh',
 			backgroundPosition: 'center',
 			backgroundRepeat: 'no-repeat',
 			backgroundSize: 'cover',
 			padding: '0',
 		},
+		mobileBg: {
+			height: '100%',
+			padding: '2rem 0rem 6rem 0rem',
+			backgroundColor: `${primary}`,
+		},
+		heroDesktop: {
+			margin: '20% 0 0 30%',
+		},
+		img: {
+			width: '20%',
+		},
 	};
 
 	return (
-		<Container fluid style={styles.imgBg}>
+		<Container
+			fluid
+			style={isXs.matches ? styles.mobileBg : styles.imgBgDesktop}
+			className='align-items-center'
+		>
 			<Container>
-				<Row>
+				<Row style={{ alignItems: 'center' }}>
 					<Col sm={12} lg={6}>
-						<div style={{ marginTop: '15%' }}>
+						<div
+							style={
+								isXs.matches
+									? { marginTop: '5rem', textAlign: 'center' }
+									: { marginTop: '5rem' }
+							}
+						>
 							<HeroTitle
-								header={'A CUBE FULL OF'}
-								title={'CURIOSITY'}
+								header={'ENRICHING YOUR LIVES THROUGH'}
+								title={'CREATIVE PLAY'}
 								colorTxt={`${yellow}`}
 							/>
-							<img
-								src={vignette}
-								alt='vignette'
-								width='90%'
-								style={{ marginTop: '4rem' }}
-							/>
+							<div
+								style={
+									isXs.matches
+										? { margin: '2rem 0 2rem 0', textAlign: 'center', width: '100%' }
+										: { marginTop: '4rem' }
+								}
+							>
+								<img
+									src={isXs.matches ? VignetteMobile : Vignette}
+									alt=''
+									style={isXs.matches ? { width: '100%' } : { width: '100%' }}
+								/>
+							</div>
 						</div>
 					</Col>
 					<Col sm={12} lg={6}>
-						<img
-							src={productNotice}
-							alt=''
-							style={{ width: '120%', paddingTop: '6rem' }}
-						/>
+						<div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+							<img
+								src={ProductNotice}
+								alt=''
+								style={isXs.matches ? { width: '120%' } : { width: '120%' }}
+							/>
+						</div>
 					</Col>
 				</Row>
 			</Container>

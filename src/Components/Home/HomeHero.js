@@ -66,7 +66,7 @@ export const HomeHero = () => {
 								style={
 									isXs.matches
 										? { margin: '2rem 0 2rem 0', textAlign: 'center' }
-										: { marginTop: '10rem' }
+										: { marginTop: '4rem' }
 								}
 							>
 								<img
@@ -74,11 +74,7 @@ export const HomeHero = () => {
 									alt=''
 									style={{ width: '75px', height: '75px', marginRight: '10px' }}
 								/>
-								<img
-									src={sesameStreetLogo}
-									alt=''
-									style={{ width: '150px', height: '75px' }}
-								/>
+								<img src={sesameStreetLogo} alt='' style={{ height: '75px' }} />
 							</div>
 						</div>
 					</Col>
