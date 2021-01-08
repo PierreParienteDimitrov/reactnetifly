@@ -2,10 +2,7 @@ import React from 'react';
 import herobg from '../../images/herobg.png';
 import Vignette from '../../images/vignette.png';
 import VignetteMobile from '../../images/VignetteMobile.png';
-
 import ProductNotice from '../../images/productNotice.png';
-import Skoog from '../../images/Skoog.png';
-
 import { Container, Row, Col } from 'react-bootstrap';
 import { HeroTitle } from '../HeroTitle';
 import { yellow, primary } from '../../Utils/ColorPalette';

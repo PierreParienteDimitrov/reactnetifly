@@ -58,10 +58,9 @@ export const FeaturesSkoogPlay = () => {
 				<Container style={isXs.matches ? { width: '90%' } : { width: '60%' }}>
 					{FeatureIcons.map((el, index) => {
 						return (
-							<>
+							<div key={index}>
 								{index % 2 === 0 ? (
 									<FeatureLeft
-										key={index}
 										src={el.src}
 										alt={el.alt}
 										title={el.title}
@@ -76,7 +75,7 @@ export const FeaturesSkoogPlay = () => {
 										longDescription={el.longDescription}
 									/>
 								)}
-							</>
+							</div>
 						);
 					})}
 				</Container>
