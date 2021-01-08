@@ -7,7 +7,13 @@ import { isXs } from '../../Utils/MediaQueries';
 
 export const AllFeatures = () => {
 	return (
-		<Container style={isXs.matches ? { width: '90%' } : { width: '70%' }}>
+		<Container
+			style={
+				isXs.matches
+					? { width: '90%', paddingBottom: '4rem' }
+					: { width: '70%', paddingBottom: '8rem' }
+			}
+		>
 			<Row style={{ textAlign: 'center' }}>
 				{FeatureIcons.map((feature, index) => {
 					return (

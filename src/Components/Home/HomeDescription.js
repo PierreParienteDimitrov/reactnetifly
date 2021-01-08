@@ -28,18 +28,33 @@ export const HomeDescription = () => {
 			</Container>
 
 			<Container
-				style={{
-					border: 'none',
-					background: `${primary}`,
-					color: 'white',
-					borderRadius: '4rem',
-					height: '2rem',
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					width: '30%',
-					marginBottom: '2rem',
-				}}
+				style={
+					isXs.matches
+						? {
+								border: 'none',
+								background: `${primary}`,
+								color: 'white',
+								borderRadius: '4rem',
+								height: '2rem',
+								display: 'flex',
+								justifyContent: 'center',
+								alignItems: 'center',
+								width: '90%',
+								marginBottom: '2rem',
+						  }
+						: {
+								border: 'none',
+								background: `${primary}`,
+								color: 'white',
+								borderRadius: '4rem',
+								height: '2rem',
+								display: 'flex',
+								justifyContent: 'center',
+								alignItems: 'center',
+								width: '30%',
+								marginBottom: '2rem',
+						  }
+				}
 			>
 				<h3>FUN & ENGAGING CONTENT</h3>
 			</Container>
