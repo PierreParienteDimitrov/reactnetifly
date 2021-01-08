@@ -30,14 +30,23 @@ export const WonderDotsHowTo = () => {
 				<Row style={{ alignItems: 'center' }}>
 					<Col sm={12} lg={5}>
 						<Container
-							style={{
-								width: '100%',
-								display: 'flex',
-								justifyContent: 'center',
-								marginBottom: '4rem',
-							}}
+							style={
+								isXs.matches
+									? {
+											width: '100%',
+											display: 'flex',
+											justifyContent: 'center',
+											marginBottom: '4rem',
+									  }
+									: {
+											width: '50%',
+											display: 'flex',
+											justifyContent: 'center',
+											marginBottom: '4rem',
+									  }
+							}
 						>
-							<img src={JumpingSkoog} alt='' width='80%' />
+							<img src={JumpingSkoog} alt='' width='100%' />
 						</Container>
 					</Col>
 					<Col sm={12} lg={7}>
