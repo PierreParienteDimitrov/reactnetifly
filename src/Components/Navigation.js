@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { blue } from '../Utils/ColorPalette';
 import SkoogLogoWhite from '../images/SkoogLogoWhite.png';
+import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
 	return (
@@ -17,11 +18,12 @@ export const Navigation = () => {
 			<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 			<Navbar.Collapse id='responsive-navbar-nav'>
 				<Nav>
-					<Nav.Link href='/skoog-play'>
+					<Link to='/skoog-play'>
 						<h6 style={{ color: 'white', cursor: 'pointer', paddingLeft: '10rem' }}>
 							Skoog Play
 						</h6>
-					</Nav.Link>
+					</Link>
+
 					<Nav.Link href='/wonder-dots'>
 						<h6 style={{ color: 'white', cursor: 'pointer' }}>Wonder Dots</h6>
 					</Nav.Link>
