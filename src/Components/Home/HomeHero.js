@@ -57,7 +57,8 @@ export const HomeHero = () => {
 							/>
 							<div style={{ marginTop: '2rem' }}>
 								<h6 style={{ color: 'white' }}>
-									Sign up now and we will notify you soon about our release!
+									Don't miss your chance to pre-order your Skoog! Sign up now for
+									important updates!
 								</h6>
 								<br />
 								<Button cta='Sign up now!' />

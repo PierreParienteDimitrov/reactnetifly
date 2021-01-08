@@ -30,7 +30,7 @@ export const HomeElmo = () => {
 					<Col sm={12} lg={6} style={{ alignItems: 'center' }}>
 						<RegularTitle
 							title={'Elmo & Friends'}
-							description={`Squeezable & interchangeable Wonder Dots packed with interactive stories, character, voices, songs & more!`}
+							description={`Squeezable & interchangeable Wonder Dots packed with interactive stories, character voices, songs, & more!`}
 						/>
 						<LinkBtn href={'/wonder-dots'} text={'BROWSE WONDER DOTS'} />
 					</Col>

@@ -60,8 +60,9 @@ export const HomeDescription = () => {
 			</Container>
 
 			<h4 style={isXs ? { textAlign: 'center' } : { marginBottom: '1rem' }}>
-				Meet the Skoog. Describe in a few words the what and the who. What is the
-				Skoog? For who it is?
+				Meet the Skoog: A Cube full of Curiosity. This soft and squeezable cube
+				provides an endless amount of learning and entertainment! Ergonomically
+				designed to fit perfectly into the hands of all children ages 3-9!
 			</h4>
 		</Container>
 	);
