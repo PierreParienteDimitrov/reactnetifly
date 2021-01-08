@@ -17,7 +17,7 @@ export const Preorder = () => {
 						<div style={{ marginBottom: '4rem' }}>
 							<h6 style={{ color: `${red}` }}>NEW!</h6>
 							<RegularTitle
-								title={'pre-order'}
+								title={'sign up to pre-order'}
 								description={`Don't miss your chance to pre-order your Skoog! Sign up now for important updates!`}
 							/>
 							<img
@@ -29,13 +29,13 @@ export const Preorder = () => {
 					</Col>
 					<Col sm={12} lg={6}>
 						<div style={{ marginBottom: '4rem' }}>
-							<h6>4 WONDER DOTS</h6>
+							<h6># WONDER DOTS</h6>
 							<hr />
 							<img src={ThreeWonderDots} alt='Three Wonder Dots' />
 						</div>
 						<div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
 							<div style={{ width: '50%' }}>
-								<h6>4 WONDER DOTS</h6>
+								<h6>USB CABLE</h6>
 								<hr />
 								<img src={USB} alt='USB Cable' />
 							</div>
