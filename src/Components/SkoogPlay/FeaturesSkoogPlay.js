@@ -19,10 +19,12 @@ export const FeaturesSkoogPlay = () => {
 			backgroundRepeat: 'no-repeat',
 			backgroundSize: 'cover',
 			padding: '0',
+			marginTop: '10rem',
 		},
 	};
 	return (
 		<>
+			{/* Engage your child's wonder serction */}
 			<Container fluid style={styles.imgBg}>
 				<Container
 					style={{
@@ -31,18 +33,28 @@ export const FeaturesSkoogPlay = () => {
 						alignItems: 'center',
 						flexDirection: 'column',
 						justifyContent: 'flex-end',
-						paddingBottom: '10rem',
 					}}
 				>
-					<RegularTitle
-						title={`Engage your child's wonder`}
-						description={`SKOOG keeps children engaged, while giving them the confidence to express
+					<div style={{ padding: '2rem 0rem 4rem 0rem' }}>
+						<RegularTitle
+							title={`Engage your child's wonder`}
+							description={`SKOOG keeps children engaged, while giving them the confidence to express
                 themselves`}
-						styling={{ textAlign: 'center' }}
-					/>
+							styling={{ textAlign: 'center' }}
+						/>
+					</div>
 				</Container>
 			</Container>
-			<Container fluid style={{ background: `${blue}` }}>
+
+			{/* All features section */}
+			<Container
+				fluid
+				style={
+					isXs
+						? { background: `${blue}`, padding: '10rem 0rem' }
+						: { background: `${blue}` }
+				}
+			>
 				<Container style={isXs.matches ? { width: '90%' } : { width: '60%' }}>
 					{FeatureIcons.map((el, index) => {
 						return (
