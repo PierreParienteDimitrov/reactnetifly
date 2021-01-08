@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import WonderDotsHero from '../../images/WonderDotsHero.png';
 import { HeroTitle } from '../HeroTitle';
 import { blue } from '../../Utils/ColorPalette';
@@ -21,7 +21,7 @@ export const HeroWonderDots = () => {
 		imgBgMobile: {
 			backgroundImage: `url(${WonderDotsHero})`,
 			backgroundColor: '#cccccc',
-			height: '60vh',
+			height: '50vh',
 			width: '100%',
 			backgroundPosition: 'center',
 			backgroundRepeat: 'no-repeat',
@@ -34,27 +34,38 @@ export const HeroWonderDots = () => {
 			fluid
 			style={isXs.matches ? styles.imgBgMobile : styles.imgBgDesktop}
 		>
-			<Container
-				style={
-					isXs.matches
-						? { padding: '2rem 0', width: '90%' }
-						: { padding: '6rem 0', width: '100%' }
-				}
-			>
-				<div style={{ display: 'flex' }}>
-					<img
-						src={SkoogSesameLogos}
-						alt='Sesame Street & Skoog Logos'
-						width='100%'
-					/>
-				</div>
-				<br />
-				<HeroTitle
-					header={'present the'}
-					title={'WONDER DOTS'}
-					colorTxt={`${blue}`}
-				/>
-			</Container>
+			<Row>
+				<Col sm={12} lg={6}>
+					<Container
+						style={
+							isXs.matches
+								? { padding: '2rem 0', width: '90%' }
+								: {
+										padding: '6rem 0',
+										width: '60%',
+										display: 'flex',
+										flexDirection: 'column',
+										justifyContent: 'left',
+								  }
+						}
+					>
+						<Container>
+							<img
+								src={SkoogSesameLogos}
+								alt='Sesame Street & Skoog Logos'
+								width='100%'
+							/>
+						</Container>
+						<br />
+						<HeroTitle
+							header={'present the'}
+							title={'WONDER DOTS'}
+							colorTxt={`${blue}`}
+						/>
+					</Container>
+				</Col>
+				<Col sm={12} lg={6}></Col>
+			</Row>
 		</Container>
 	);
 };

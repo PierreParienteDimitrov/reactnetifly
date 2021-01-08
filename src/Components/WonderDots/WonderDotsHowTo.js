@@ -29,7 +29,7 @@ export const WonderDotsHowTo = () => {
 			>
 				<Row style={{ alignItems: 'center' }}>
 					<Col sm={12} lg={5}>
-						<div
+						<Container
 							style={{
 								width: '100%',
 								display: 'flex',
@@ -38,7 +38,7 @@ export const WonderDotsHowTo = () => {
 							}}
 						>
 							<img src={JumpingSkoog} alt='' width='80%' />
-						</div>
+						</Container>
 					</Col>
 					<Col sm={12} lg={7}>
 						<h5>HOW WONDER DOTS WORKS</h5>
