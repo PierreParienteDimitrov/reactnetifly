@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import SesameBg from '../../images/sesame-bg.png';
 import { RegularTitle } from '../RegularTitle';
-import { isXs } from '../../Utils/MediaQueries';
 import { LinkBtn } from '../LinkBtn';
 import { yellow } from '../../Utils/ColorPalette';
 
