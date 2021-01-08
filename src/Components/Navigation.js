@@ -14,7 +14,7 @@ export const Navigation = () => {
 			variant='dark'
 			style={{ background: `${blue}` }}
 		>
-			<Navbar.Brand href='/' style={{ padding: '0 4rem' }}>
+			<Navbar.Brand href='/'>
 				<img src={SkoogLogoWhite} alt='Skoog Logo White' />
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls='responsive-navbar-nav' />
