@@ -14,7 +14,7 @@ export const Navigation = () => {
 			variant='dark'
 			style={{ background: `${blue}` }}
 		>
-			<Navbar.Brand href='/' style={{ paddingLeft: '4rem' }}>
+			<Navbar.Brand href='/' style={{ padding: '0 4rem' }}>
 				<img src={SkoogLogoWhite} alt='Skoog Logo White' />
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls='responsive-navbar-nav' />
@@ -36,7 +36,7 @@ export const Navigation = () => {
 										flexDirection: 'column',
 										justifyContent: 'space-around',
 								  }
-								: { width: '60%' }
+								: { width: '70%' }
 						}
 					>
 						<Link to='/skoog-play'>
@@ -53,7 +53,7 @@ export const Navigation = () => {
 
 						<Link to='/story'>
 							<h6 style={{ color: 'white', cursor: 'pointer', paddingLeft: '10rem' }}>
-								Story
+								Our Story
 							</h6>
 						</Link>
 					</Container>
