@@ -5,44 +5,52 @@ import ThreeWonderDots from '../images/three-wonder-dots.png';
 import USB from '../images/usb.png';
 import Instructions from '../images/instructions.png';
 import { RegularTitle } from './RegularTitle';
+import { Button } from './Button';
+import { red } from '../Utils/ColorPalette';
 
 export const Preorder = () => {
 	return (
 		<Container>
-			<Row style={{ margin: '10% 10%' }}>
-				<Col sm={12} lg={6}>
-					<div>
-						<h5>NEW!</h5>
-						<RegularTitle
-							title={'pre-order'}
-							description={'Preorder your starter kit now! Starting from $99.'}
-						/>
-						<img src={Packaging} alt='Skoog Packaging' width='90%' />
-					</div>
-				</Col>
-				<Col sm={12} lg={6}>
-					<div>
-						<h6>4 WONDER DOTS</h6>
-						<hr />
-						<img src={ThreeWonderDots} alt='Three Wonder Dots' />
-					</div>
-					<div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-						<div style={{ width: '50%' }}>
+			<div style={{ padding: '20% 0' }}>
+				<Row style={{ alignItems: 'center' }}>
+					<Col sm={12} lg={6}>
+						<div style={{ marginBottom: '4rem' }}>
+							<h6 style={{ color: `${red}` }}>NEW!</h6>
+							<RegularTitle
+								title={'pre-order'}
+								description={'Preorder your starter kit now! Starting from $99.'}
+							/>
+							<img
+								src={Packaging}
+								alt='Skoog Packaging'
+								style={{ width: '90%', marginTop: '2rem' }}
+							/>
+						</div>
+					</Col>
+					<Col sm={12} lg={6}>
+						<div style={{ marginBottom: '4rem' }}>
 							<h6>4 WONDER DOTS</h6>
 							<hr />
-							<img src={USB} alt='USB Cable' />
+							<img src={ThreeWonderDots} alt='Three Wonder Dots' />
 						</div>
-						<div style={{ width: '50%' }}>
-							<h6>4 WONDER DOTS</h6>
-							<hr />
-							<img src={Instructions} alt='Instructions' />
+						<div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
+							<div style={{ width: '50%' }}>
+								<h6>4 WONDER DOTS</h6>
+								<hr />
+								<img src={USB} alt='USB Cable' />
+							</div>
+							<div style={{ width: '50%' }}>
+								<h6>INSTRUCTION</h6>
+								<hr />
+								<img src={Instructions} alt='Instructions' />
+							</div>
 						</div>
-					</div>
-				</Col>
-			</Row>
-			<Row style={{ justifyContent: 'center' }}>
-				<button>Pre-order now!</button>
-			</Row>
+					</Col>
+				</Row>
+				<Row style={{ justifyContent: 'center', marginTop: '4rem' }}>
+					<Button cta='Pre-order now!' />
+				</Row>
+			</div>
 		</Container>
 	);
 };

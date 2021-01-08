@@ -9,7 +9,7 @@ export const Button = ({ cta }) => {
 			padding: '0.2rem 1.2rem',
 			borderRadius: '10px',
 			boxShadow: `0px 5px ${lightBlue}`,
-			color: 'white',
+			color: `${blue}`,
 			cursor: 'pointer',
 		},
 	};
