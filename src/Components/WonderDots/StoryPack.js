@@ -38,7 +38,11 @@ export const StoryPack = () => {
 								marginBottom: '4rem',
 							}}
 						>
-							<img src={GoneFarming} alt='' width='80%' />
+							<img
+								src={GoneFarming}
+								alt=''
+								style={isXs.matches ? { width: '60%' } : { width: '80%' }}
+							/>
 						</div>
 					</Col>
 					<Col sm={12} lg={4}>
@@ -50,7 +54,11 @@ export const StoryPack = () => {
 								marginBottom: '4rem',
 							}}
 						>
-							<img src={PlayBall} alt='' width='80%' />
+							<img
+								src={PlayBall}
+								alt=''
+								style={isXs.matches ? { width: '60%' } : { width: '80%' }}
+							/>
 						</div>
 					</Col>
 					<Col sm={12} lg={4}>
@@ -62,7 +70,11 @@ export const StoryPack = () => {
 								marginBottom: '4rem',
 							}}
 						>
-							<img src={Mystery} alt='' width='80%' />
+							<img
+								src={Mystery}
+								alt=''
+								style={isXs.matches ? { width: '60%' } : { width: '80%' }}
+							/>
 						</div>
 					</Col>
 				</Row>
