@@ -49,7 +49,7 @@ export const HeroSkoogPlay = () => {
 							}
 						>
 							<HeroTitle
-								header={'ENRICHING YOUR LIVES THROUGH'}
+								header={`Enriching Children's Lives Through Creative Play`}
 								title={'CREATIVE PLAY'}
 								colorTxt={`${yellow}`}
 							/>

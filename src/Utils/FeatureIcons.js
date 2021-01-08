@@ -10,10 +10,10 @@ export const FeatureIcons = [
 	{
 		src: book,
 		alt: 'book',
-		title: 'Interactive Stories',
+		title: 'Stories',
 		shortDescription: 'Kids control the outcome',
 		longDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet totam harum nulla a quae facere nam laborum quos dignissimos.',
+			'The Skoog light-up buttons let you interact in a completly new way. Make choicesand shape the story as you go. Each choice leads to a different adventure, so you can play again and again, with a new story each time.',
 	},
 	{
 		src: notes,
@@ -21,23 +21,21 @@ export const FeatureIcons = [
 		title: 'Musical Interface',
 		shortDescription: 'Play-along & sing-along',
 		longDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet totam harum nulla a quae facere nam laborum quos dignissimos.',
+			'Play and sing along with pre-programmed songs or ignite your musical creativity by playing an instrument alone.',
 	},
 	{
 		src: trophee,
 		alt: 'trophee',
 		title: 'Brain Games',
 		shortDescription: 'Games that stimulate growing minds',
-		longDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet totam harum nulla a quae facere nam laborum quos dignissimos.',
+		longDescription: 'Hours of fun with memory challenges, puzzles, and more.',
 	},
 	{
 		src: sound,
 		alt: 'sound',
 		title: 'Speaker +',
 		shortDescription: 'Connect to your playlists',
-		longDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet totam harum nulla a quae facere nam laborum quos dignissimos.',
+		longDescription: 'Use the cube as a wireless Bluetooth speaker.',
 	},
 	{
 		src: screen,
@@ -45,14 +43,13 @@ export const FeatureIcons = [
 		title: 'Screen-free',
 		shortDescription: '8GB memory for offline play',
 		longDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet totam harum nulla a quae facere nam laborum quos dignissimos.',
+			'The Skoog is a soft, squeezable cube with light-up buttons that control the fun. The size is just right to fit into small hands.',
 	},
 	{
 		src: arrows,
 		alt: 'arrows',
 		title: 'Evolving content library',
 		shortDescription: 'Classic stories from award-winning brands',
-		longDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet totam harum nulla a quae facere nam laborum quos dignissimos.',
+		longDescription: 'Classic stories from award-winning brands',
 	},
 ];
