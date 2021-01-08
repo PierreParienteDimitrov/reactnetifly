@@ -9,8 +9,8 @@ export const StoryTime = () => {
 		<Container>
 			<Row style={{ alignItems: 'center' }}>
 				<Col sm={12} lg={6}>
-					<div style={{ marginTop: '15%' }}>
-						<img src={ElmoFriend} alt='Elmo Friend' />
+					<div style={{ margin: '4rem 0' }}>
+						<img src={ElmoFriend} alt='Elmo Friend' width='100%' />
 					</div>
 				</Col>
 				<Col sm={12} lg={6}>

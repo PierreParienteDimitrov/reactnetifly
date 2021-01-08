@@ -5,7 +5,7 @@ import { Navigation } from './Components/Navigation';
 import { Home } from './Pages/Home';
 import { SkoogPlay } from './Pages/SkoogPlay';
 import { WonderDots } from './Pages/WonderDots';
-import { Story } from './Pages/Story';
+import { OurStory } from './Pages/OurStory';
 
 function App() {
 	return (
@@ -23,7 +23,7 @@ function App() {
 						<WonderDots />
 					</Route>
 					<Route path='/story'>
-						<Story />
+						<OurStory />
 					</Route>
 				</Switch>
 			</Router>
