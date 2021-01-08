@@ -11,7 +11,7 @@ export const WonderDotsHowTo = () => {
 	const styles = {
 		howToBg: {
 			backgroundImage: `url(${WonderHow})`,
-			backgroundColor: '#cccccc',
+			backgroundColor: 'white',
 			backgroundPosition: 'center',
 			backgroundRepeat: 'no-repeat',
 			backgroundSize: 'cover',
@@ -20,6 +20,8 @@ export const WonderDotsHowTo = () => {
 	};
 	return (
 		<Container fluid style={styles.howToBg}>
+			<Container style={isXs.matches ? {width: '90%', padding:'4rem 0'} : {width: '80%', padding:'8rem 0'} }>
+
 			<Row style={{ alignItems: 'center' }}>
 				<Col sm={12} lg={5}>
 					<Container
@@ -27,11 +29,11 @@ export const WonderDotsHowTo = () => {
 							isXs.matches
 								? {
 										width: '100%',
-										marginBottom: '4rem',
+										margin: '4rem 0',
 								  }
 								: {
-										width: '30%',
-										marginBottom: '4rem',
+										width: '80%',
+										margin: '4rem 0',
 								  }
 						}
 					>
@@ -63,6 +65,9 @@ export const WonderDotsHowTo = () => {
 					/>
 				</Col>
 			</Row>
+
+
+			</Container>
 		</Container>
 	);
 };
