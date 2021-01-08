@@ -64,7 +64,11 @@ export const HomeDescription = () => {
 						);
 					})}
 				</Row>
-				<LinkBtn href={'/skoog-play'} text={'Browse All Features'} />
+				<LinkBtn
+					align={'center'}
+					href={'/skoog-play'}
+					text={'Browse All Features'}
+				/>
 			</Container>
 		</>
 	);
